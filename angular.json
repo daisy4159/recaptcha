@@ -121,8 +121,16 @@
               "devServerTarget": "recaptcha:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "recaptcha"
+    }
+  },
+  "defaultProject": "recaptcha",
+  "cli": {
+    "analytics": false
+  }
 }
