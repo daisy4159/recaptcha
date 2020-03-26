@@ -9,8 +9,12 @@
     <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render("g-recaptcha", {
-          sitekey: "6LfSTeQUAAAAAJ-ImXr2qEVjs_VcjIFIRfpVbj9n"
+          sitekey: "6LfSTeQUAAAAAJ-ImXr2qEVjs_VcjIFIRfpVbj9n",
+          callback: verifyCallback
         });
+      };
+      var verifyCallback = function(response) {
+        alert(response);
       };
     </script>
   <link rel="stylesheet" href="styles.5bd1e2ba879a3030573a.css"></head>
